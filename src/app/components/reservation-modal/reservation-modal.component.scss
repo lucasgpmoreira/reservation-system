@@ -1,0 +1,45 @@
+.reservation-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.date-field {
+  flex: 2;
+  min-width: 180px;
+}
+
+.time-field {
+  flex: 1;
+  min-width: 100px;
+}
+
+.now-button {
+  height: 56px; /* Alinha com a altura do mat-form-field outline */
+}
+
+.form-section-title {
+  font-weight: 500;
+  margin-bottom: -0.5rem;
+  margin-top: 0.5rem;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.timezone-note {
+  font-size: 0.75em;
+  color: rgba(0, 0, 0, 0.6);
+  margin-top: -12px;
+  padding-left: 4px;
+}
+
+/* Garante que os botões de ação não fiquem colados no conteúdo */
+[mat-dialog-actions] {
+  padding-top: 1rem;
+}
